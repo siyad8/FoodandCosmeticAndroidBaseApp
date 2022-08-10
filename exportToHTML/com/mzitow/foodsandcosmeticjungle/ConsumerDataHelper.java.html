@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>ConsumerDataHelper.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c792ea; font-style: italic;}
+.s1 { color: #c3cee3;}
+.s2 { color: #89ddff;}
+.s3 { color: #c3e88d;}
+.s4 { color: #f78c6c;}
+</style>
+</head>
+<body bgcolor="#263238">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ConsumerDataHelper.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">mzitow</span><span class="s2">.</span><span class="s1">foodsandcosmeticjungle</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">content</span><span class="s2">.</span><span class="s1">Context</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">database</span><span class="s2">.</span><span class="s1">sqlite</span><span class="s2">.</span><span class="s1">SQLiteDatabase</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">database</span><span class="s2">.</span><span class="s1">sqlite</span><span class="s2">.</span><span class="s1">SQLiteOpenHelper</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">androidx</span><span class="s2">.</span><span class="s1">annotation</span><span class="s2">.</span><span class="s1">Nullable</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">ConsumerDataHelper  </span><span class="s0">extends </span><span class="s1">SQLiteOpenHelper </span><span class="s2">{</span>
+    <span class="s0">public </span><span class="s1">ConsumerDataHelper</span><span class="s2">( </span><span class="s1">Context context</span><span class="s2">) {</span>
+        <span class="s0">super</span><span class="s2">(</span><span class="s1">context</span><span class="s2">, </span><span class="s3">&quot;consumerDetails.db&quot;</span><span class="s2">, </span><span class="s0">null</span><span class="s2">, </span><span class="s4">1</span><span class="s2">);</span>
+    <span class="s2">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">public void </span><span class="s1">onCreate</span><span class="s2">(</span><span class="s1">SQLiteDatabase ConDB</span><span class="s2">) {</span>
+        <span class="s1">ConDB</span><span class="s2">.</span><span class="s1">execSQL</span><span class="s2">(</span><span class="s3">&quot;create Table consumerdetail(name TEXT primary key, contact TEXT, password TEXT)&quot;</span><span class="s2">);</span>
+
+    <span class="s2">}</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">public void </span><span class="s1">onUpgrade</span><span class="s2">(</span><span class="s1">SQLiteDatabase ConDB </span><span class="s2">, </span><span class="s0">int </span><span class="s1">i</span><span class="s2">, </span><span class="s0">int </span><span class="s1">i1</span><span class="s2">) {</span>
+        <span class="s1">ConDB</span><span class="s2">.</span><span class="s1">execSQL</span><span class="s2">(</span><span class="s3">&quot;drop Table if exists consumerDetails&quot;</span><span class="s2">);</span>
+
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

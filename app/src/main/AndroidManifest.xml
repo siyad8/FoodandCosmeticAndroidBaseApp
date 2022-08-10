@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mzitow.foodsandcosmeticjungle"
+    android:requestLegacyExternalStorage="true">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodsAndCosmeticJungle">
+        <activity android:name=".OneTimePassword" />
+        <activity
+            android:name=".DeliverySignUpNew"
+            android:label="@string/title_activity_delivery_sign_up_new"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar"></activity>
+        <activity
+            android:name=".DeliveryLoginNew"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".ProducerLoginNew"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".ProducerSignUpNew"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".CustomerSignUPNew"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".Reset_password"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".CustomerLoginNew"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".SplashScreenNew"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar"
+            tools:ignore="IntentFilterExportedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CosmeticsTabLayOut"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity
+            android:name=".FoodTabLayOut"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+        <activity android:name=".DeliveryProgress" />
+        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".ProductCosmeticDiscription" />
+        <activity android:name=".PlaceYourOrder" />
+        <activity android:name=".CustomerFoodCatergory" />
+        <activity android:name=".ProductHistory" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ProducerOrder" />
+        <activity android:name=".ProducerCategory" />
+        <activity android:name=".ConsumerCategory" />
+        <activity android:name=".AddProduct" />
+        <activity android:name=".ProductDiscription" />
+        <activity android:name=".DeliveryDashboard" />
+        <activity android:name=".ProducerDashboard" />
+        <activity android:name=".ConsumerDashboard"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar"
+            />
+        <activity android:name=".DeliverySignUp" />
+        <activity android:name=".ConsumerSignUp" />
+        <activity android:name=".ProducerSignUp" />
+        <activity android:name=".DeliveryLogin" />
+        <activity android:name=".ProducerLogin" />
+        <activity android:name=".CustomerLogin" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.FoodsAndCosmeticJungle.NoActionBar" />
+    </application>
+
+</manifest>

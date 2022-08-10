@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_delivery_progress.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_food_tab_lay_out.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_main.xml" value="0.15925925925925927" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_producer_dashboard.xml" value="0.14074074074074075" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_product_cosmetic_discription.xml" value="0.184375" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_product_history.xml" value="0.184375" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/activity_reset_password.xml" value="0.184375" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/food_card.xml" value="0.184375" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/fragment_cakes.xml" value="0.184375" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/new_product_card_view.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/ACER/Desktop/faizafoodapp-master/app/src/main/res/layout/product_card.xml" value="0.184375" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/drawable-v24/button1_bg.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/drawable/ic_add_shopping_cart.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/drawable/ic_favorite_border.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/drawable/ic_share.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/drawable/touch_feedback.xml" value="0.2203125" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/activity_add_product.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/activity_consumer_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/activity_cosmetics_tab_lay_out.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/activity_delivery_progress.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/activity_food_tab_lay_out.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/delivery_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/fragment_bevarages.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/fragment_cakes.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/fragment_hair_care.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/fragment_make_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/fragment_perfume.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/fragment_sweet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/item_sample.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/new_product_card_view.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/product_card.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/Desktop/siyad/faizafoodapp-master/app/src/main/res/layout/view_bottom_anchor.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

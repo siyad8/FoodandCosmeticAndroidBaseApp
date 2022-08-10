@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1045993737809",
+    "project_id": "foods-and-cosmetic-jungle",
+    "storage_bucket": "foods-and-cosmetic-jungle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045993737809:android:d8605862092e3700a2f270",
+        "android_client_info": {
+          "package_name": "com.mzitow.foodsandcosmeticjungle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045993737809-ql80r2ctlqru5b188a4n7pd5f1kqask7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQyox-DjZp3dHsDmkCrsu6XW8ruim72DI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045993737809-ql80r2ctlqru5b188a4n7pd5f1kqask7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

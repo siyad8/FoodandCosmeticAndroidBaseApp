@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>ConsumerSignUp.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #c792ea; font-style: italic;}
+.s1 { color: #c3cee3;}
+.s2 { color: #89ddff;}
+.s3 { color: #c3e88d;}
+.s4 { color: #546e7a; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#263238">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+ConsumerSignUp.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com</span><span class="s2">.</span><span class="s1">mzitow</span><span class="s2">.</span><span class="s1">foodsandcosmeticjungle</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">androidx</span><span class="s2">.</span><span class="s1">appcompat</span><span class="s2">.</span><span class="s1">app</span><span class="s2">.</span><span class="s1">AppCompatActivity</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">content</span><span class="s2">.</span><span class="s1">Context</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">content</span><span class="s2">.</span><span class="s1">Intent</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">content</span><span class="s2">.</span><span class="s1">SharedPreferences</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">os</span><span class="s2">.</span><span class="s1">Bundle</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">view</span><span class="s2">.</span><span class="s1">View</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">widget</span><span class="s2">.</span><span class="s1">Button</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">widget</span><span class="s2">.</span><span class="s1">EditText</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">android</span><span class="s2">.</span><span class="s1">widget</span><span class="s2">.</span><span class="s1">Toast</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">ConsumerSignUp </span><span class="s0">extends </span><span class="s1">AppCompatActivity </span><span class="s2">{</span>
+    <span class="s1">EditText email</span><span class="s2">, </span><span class="s1">username</span><span class="s2">,</span><span class="s1">password</span><span class="s2">,</span><span class="s1">phone</span><span class="s2">;</span>
+    <span class="s1">Button signup</span><span class="s2">;</span>
+    <span class="s1">DBHelper Db</span><span class="s2">;</span>
+    <span class="s0">public static final </span><span class="s1">String MY_PREFS_NAME </span><span class="s2">= </span><span class="s3">&quot;MyPrefsFile&quot;</span><span class="s2">;</span>
+
+    <span class="s1">@Override</span>
+    <span class="s0">protected void </span><span class="s1">onCreate</span><span class="s2">(</span><span class="s1">Bundle savedInstanceState</span><span class="s2">) {</span>
+        <span class="s0">super</span><span class="s2">.</span><span class="s1">onCreate</span><span class="s2">(</span><span class="s1">savedInstanceState</span><span class="s2">);</span>
+        <span class="s1">setContentView</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">layout</span><span class="s2">.</span><span class="s1">activity_consumer_sign_up</span><span class="s2">);</span>
+
+
+        <span class="s1">email</span><span class="s2">= </span><span class="s1">findViewById</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">id</span><span class="s2">.</span><span class="s1">et_email</span><span class="s2">);</span>
+        <span class="s1">username</span><span class="s2">= </span><span class="s1">findViewById</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">id</span><span class="s2">.</span><span class="s1">et_username</span><span class="s2">);</span>
+        <span class="s1">password</span><span class="s2">= </span><span class="s1">findViewById</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">id</span><span class="s2">.</span><span class="s1">et_password</span><span class="s2">);</span>
+        <span class="s1">phone</span><span class="s2">= </span><span class="s1">findViewById</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">id</span><span class="s2">.</span><span class="s1">et_phone</span><span class="s2">);</span>
+        <span class="s1">email</span><span class="s2">= </span><span class="s1">findViewById</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">id</span><span class="s2">.</span><span class="s1">et_email</span><span class="s2">);</span>
+        <span class="s1">signup</span><span class="s2">= </span><span class="s1">findViewById</span><span class="s2">(</span><span class="s1">R</span><span class="s2">.</span><span class="s1">id</span><span class="s2">.</span><span class="s1">button_signup</span><span class="s2">);</span>
+
+        <span class="s1">String name </span><span class="s2">= </span><span class="s1">username</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">().</span><span class="s1">toString</span><span class="s2">().</span><span class="s1">trim</span><span class="s2">();</span>
+        <span class="s1">String pass </span><span class="s2">= </span><span class="s1">password</span><span class="s2">.</span><span class="s1">getText</span><span class="s2">().</span><span class="s1">toString</span><span class="s2">().</span><span class="s1">trim</span><span class="s2">();</span>
+
+        <span class="s1">signup</span><span class="s2">.</span><span class="s1">setOnClickListener</span><span class="s2">(</span><span class="s0">new </span><span class="s1">View</span><span class="s2">.</span><span class="s1">OnClickListener</span><span class="s2">() {</span>
+            <span class="s1">@Override</span>
+            <span class="s0">public void </span><span class="s1">onClick</span><span class="s2">(</span><span class="s1">View view</span><span class="s2">) {</span>
+
+<span class="s4">//                Db.insertcustomerdata(name,pass);</span>
+
+
+
+
+
+                <span class="s1">SharedPreferences sharedPreferences </span><span class="s2">= </span><span class="s1">getSharedPreferences</span><span class="s2">(</span><span class="s3">&quot;consumerSignup&quot;</span><span class="s2">, </span><span class="s1">Context</span><span class="s2">.</span><span class="s1">MODE_PRIVATE</span><span class="s2">);</span>
+                <span class="s1">SharedPreferences</span><span class="s2">.</span><span class="s1">Editor preferencesEditor </span><span class="s2">= </span><span class="s1">sharedPreferences</span><span class="s2">.</span><span class="s1">edit</span><span class="s2">();</span>
+                <span class="s1">preferencesEditor</span><span class="s2">.</span><span class="s1">putString</span><span class="s2">(</span><span class="s3">&quot;Name&quot;</span><span class="s2">, </span><span class="s1">name</span><span class="s2">);</span>
+                <span class="s1">preferencesEditor</span><span class="s2">.</span><span class="s1">putString</span><span class="s2">(</span><span class="s3">&quot;password&quot;</span><span class="s2">, </span><span class="s1">pass</span><span class="s2">);</span>
+                <span class="s1">preferencesEditor</span><span class="s2">.</span><span class="s1">apply</span><span class="s2">();</span>
+
+
+                <span class="s1">Intent intent </span><span class="s2">= </span><span class="s0">new </span><span class="s1">Intent</span><span class="s2">(</span><span class="s1">ConsumerSignUp</span><span class="s2">.</span><span class="s0">this</span><span class="s2">, </span><span class="s1">CustomerLogin</span><span class="s2">.</span><span class="s0">class</span><span class="s2">);</span>
+                <span class="s1">startActivity</span><span class="s2">(</span><span class="s1">intent</span><span class="s2">);</span>
+                <span class="s1">Toast toast </span><span class="s2">= </span><span class="s1">Toast</span><span class="s2">.</span><span class="s1">makeText</span><span class="s2">(</span><span class="s1">ConsumerSignUp</span><span class="s2">.</span><span class="s0">this</span><span class="s2">, </span><span class="s3">&quot;signup succces&quot;</span><span class="s2">, </span><span class="s1">Toast</span><span class="s2">.</span><span class="s1">LENGTH_SHORT</span><span class="s2">);</span>
+                <span class="s1">toast</span><span class="s2">.</span><span class="s1">show</span><span class="s2">();</span>
+            <span class="s2">}</span>
+        <span class="s2">});</span>
+
+
+
+    <span class="s2">}</span>
+<span class="s2">}</span></pre>
+</body>
+</html>

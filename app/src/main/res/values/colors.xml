@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="md_cyan_A700">#00B8D4</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorTextInputBackground">#F7F7F7</color>
+    <color name="colorBackground">#fff</color>
+    <color name="design_default_color_on_secondary">#000000</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="holo_green_light">#ff99cc00</color>
+    <color name="holo_green_dark">#ff669900</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimarydark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="background_material_dark_gray">#EEEEEE</color>
+    <color name="background_material_dark_black">#B3000000</color>
+
+    <color name="card_state_normal">#FFE</color>
+    <color name="card_state_focused">#CCC</color>
+    <color name="card_state_selected">#0055A5</color>
+    <color name="card_state_ripple">#000</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="custom_color">#FF1566e0</color>
+</resources>
